@@ -20,7 +20,7 @@ public class ActivityInfo {
     @JsonProperty("type")
     private String type;
     @JsonProperty("confidence")
-    private Integer confidence;
+    private Long confidence;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<>();
 
@@ -35,12 +35,12 @@ public class ActivityInfo {
     }
 
     @JsonProperty("confidence")
-    public Integer getConfidence() {
+    public Long getConfidence() {
         return confidence;
     }
 
     @JsonProperty("confidence")
-    public void setConfidence(Integer confidence) {
+    public void setConfidence(Long confidence) {
         this.confidence = confidence;
     }
 

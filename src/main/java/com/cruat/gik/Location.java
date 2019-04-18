@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "timestampMs",
     "latitudeE7",
-    "longitudeE7",
+    "itudeE7",
     "accuracy",
     "activity"
 })
@@ -25,11 +25,11 @@ public class Location {
     @JsonProperty("timestampMs")
     private String timestampMs;
     @JsonProperty("latitudeE7")
-    private Integer latitudeE7;
-    @JsonProperty("longitudeE7")
-    private Integer longitudeE7;
+    private Long latitudeE7;
+    @JsonProperty("itudeE7")
+    private Long itudeE7;
     @JsonProperty("accuracy")
-    private Integer accuracy;
+    private Long accuracy;
     @JsonProperty("activity")
     private List<Activity> activity = new ArrayList<>();
     @JsonIgnore
@@ -46,32 +46,32 @@ public class Location {
     }
 
     @JsonProperty("latitudeE7")
-    public Integer getLatitudeE7() {
+    public Long getLatitudeE7() {
         return latitudeE7;
     }
 
     @JsonProperty("latitudeE7")
-    public void setLatitudeE7(Integer latitudeE7) {
+    public void setLatitudeE7(Long latitudeE7) {
         this.latitudeE7 = latitudeE7;
     }
 
-    @JsonProperty("longitudeE7")
-    public Integer getLongitudeE7() {
-        return longitudeE7;
+    @JsonProperty("itudeE7")
+    public Long getitudeE7() {
+        return itudeE7;
     }
 
-    @JsonProperty("longitudeE7")
-    public void setLongitudeE7(Integer longitudeE7) {
-        this.longitudeE7 = longitudeE7;
+    @JsonProperty("itudeE7")
+    public void setitudeE7(Long itudeE7) {
+        this.itudeE7 = itudeE7;
     }
 
     @JsonProperty("accuracy")
-    public Integer getAccuracy() {
+    public Long getAccuracy() {
         return accuracy;
     }
 
     @JsonProperty("accuracy")
-    public void setAccuracy(Integer accuracy) {
+    public void setAccuracy(Long accuracy) {
         this.accuracy = accuracy;
     }
 
