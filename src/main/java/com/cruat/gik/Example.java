@@ -19,9 +19,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Example {
 
     @JsonProperty("locations")
-    private List<Location> locations = new ArrayList<Location>();
+    private List<Location> locations = new ArrayList<>();
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("locations")
     public List<Location> getLocations() {

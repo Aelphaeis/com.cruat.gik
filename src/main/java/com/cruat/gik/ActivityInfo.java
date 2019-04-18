@@ -22,7 +22,7 @@ public class ActivityInfo {
     @JsonProperty("confidence")
     private Integer confidence;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("type")
     public String getType() {

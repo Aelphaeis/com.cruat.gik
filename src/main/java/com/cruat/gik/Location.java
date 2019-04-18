@@ -31,9 +31,9 @@ public class Location {
     @JsonProperty("accuracy")
     private Integer accuracy;
     @JsonProperty("activity")
-    private List<Activity> activity = new ArrayList<Activity>();
+    private List<Activity> activity = new ArrayList<>();
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("timestampMs")
     public String getTimestampMs() {
@@ -94,5 +94,4 @@ public class Location {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-
 }

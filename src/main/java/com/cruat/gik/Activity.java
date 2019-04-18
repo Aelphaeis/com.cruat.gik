@@ -15,16 +15,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "timestampMs",
-    "activity"
+    "activityInfo"
 })
 public class Activity {
 
     @JsonProperty("timestampMs")
     private String timestampMs;
-    @JsonProperty("activity")
-    private List<ActivityInfo> activity = new ArrayList<ActivityInfo>();
+    @JsonProperty("activityInfo")
+    private List<ActivityInfo> activityInfo = new ArrayList<>();
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     @JsonProperty("timestampMs")
     public String getTimestampMs() {
@@ -36,14 +36,14 @@ public class Activity {
         this.timestampMs = timestampMs;
     }
 
-    @JsonProperty("activity")
-    public List<ActivityInfo> getActivity() {
-        return activity;
+    @JsonProperty("activityInfo")
+    public List<ActivityInfo> getActivityInfo() {
+        return activityInfo;
     }
 
-    @JsonProperty("activity")
-    public void setActivity(List<ActivityInfo> activity) {
-        this.activity = activity;
+    @JsonProperty("activityInfo")
+    public void setActivityInfo(List<ActivityInfo> activity) {
+        this.activityInfo = activity;
     }
 
     @JsonAnyGetter
