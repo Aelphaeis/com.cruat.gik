@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
     "locations"
 })
-public class Example {
+public class GikInputSource {
 
     @JsonProperty("locations")
     private List<Location> locations = new ArrayList<>();
