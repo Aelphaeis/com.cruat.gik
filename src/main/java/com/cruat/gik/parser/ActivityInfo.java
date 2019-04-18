@@ -1,5 +1,5 @@
 
-package com.cruat.gik;
+package com.cruat.gik.parser;
 
 import java.util.HashMap;
 import java.util.Map;
